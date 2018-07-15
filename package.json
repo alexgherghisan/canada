@@ -1,0 +1,26 @@
+{
+	"name": "playground",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "private",
+	"scripts": {
+		"dev": "next",
+		"start": "next start",
+		"build": "next build",
+		"export":
+			"yarn clearcache && next build && next export -o public && touch public/.nojekyll",
+		"deploy": "git subtree push --prefix public origin gh-pages",
+		"clearcache": "rm -rf node_modules/.cache"
+	},
+	"dependencies": {
+		"date-fns": "^1.29.0",
+		"react": "^16.3.1",
+		"react-dom": "^16.3.1",
+		"react-spring": "5.1.1",
+		"unistore": "^3.0.4"
+	},
+	"devDependencies": {
+		"@zeit/next-css": "^0.2.0",
+		"next": "^6.0.3"
+	}
+}

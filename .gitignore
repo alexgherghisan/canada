@@ -1,0 +1,29 @@
+# archive formats
+*.rar
+*.tar
+*.zip
+*.log
+
+# clutter
+.Spotlight-V100
+.Trashes
+.DS_Store
+*un~
+._*
+tmp
+*.code-workspace
+
+# node specific
+node_modules
+.next
+# ignore npm, use yarn
+package-lock*
+
+# certbot certificates
+ssl
+# log files
+logs
+# sqlite db file
+db
+# remove from repo, generated through scripts
+config/nginx.conf

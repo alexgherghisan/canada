@@ -1,0 +1,67 @@
+.sections {
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+.sections_hovered {
+	composes: sections;
+}
+.sections .section:nth-child(1) {
+	background-position: left;
+}
+.sections .section:nth-child(2) {
+	background-position: center;
+}
+.sections .section:nth-child(3) {
+	background-position: right;
+}
+.section {
+	display: flex;
+	flex-basis: 33.33%;
+	overflow: hidden;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition-property: flex-basis;
+	transition-duration: 0.3s;
+	transition-delay: 0.1s;
+	transition-timing-function: ease-in-out;
+}
+.section_hovered {
+	composes: section;
+	transition-delay: 0s;
+}
+.sections_hovered .section {
+	flex-basis: 30%;
+}
+.sections_hovered .section_hovered {
+	flex-basis: 40%;
+}
+.sections_active {
+	composes: sections;
+}
+.section_active {
+	composes: section_hovered;
+	z-index: 10;
+}
+.sections_active .section {
+	flex-basis: 0%;
+}
+.sections_active .section_active {
+	flex-basis: 100%;
+}
+@media (max-width: 48rem) {
+	.sections {
+		flex-wrap: wrap;
+	}
+	.section {
+		flex-basis: 100%;
+	}
+	.sections_hovered .section {
+		flex-basis: 100%;
+	}
+	.sections_hovered .section_hovered {
+		flex-basis: 100%;
+	}
+}

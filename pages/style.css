@@ -1,0 +1,9 @@
+.application {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.application * {
+	box-sizing: border-box;
+}
+
