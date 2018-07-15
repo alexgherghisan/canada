@@ -6,7 +6,7 @@ const publicURL = isProduction
 	? `https://alexgherghisan.github.io/${repository}`
 	: "";
 const staticURL = isProduction ? `${publicURL}/static` : "/static";
-const base = isProduction ? "/playground" : "";
+const base = isProduction ? "/canada" : "";
 
 const routes = {
 	"/": { page: "/" },
