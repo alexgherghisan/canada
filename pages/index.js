@@ -1,4 +1,4 @@
-import Sections from "~/components/Sections";
+import Sections from "./Sections";
 import data from "./data";
 import $ from "./style.css";
 
