@@ -47,7 +47,9 @@ class Sections extends Component {
 							className={sectionClasses}
 							style={{ backgroundImage: `url(${section.image})` }}
 							onClick={
-								activeIndex ? null : () => this.handleClick(key)
+								activeIndex != null
+									? null
+									: () => this.handleClick(key)
 							}
 							onMouseEnter={() => this.handleHover(key)}
 							onMouseLeave={() => this.handleHover()}

@@ -22,12 +22,7 @@ class Section extends Component {
 
 		return (
 			<b className={isActive ? $.section_active : $.section}>
-				<b
-					className={[
-						isHovered ? $.overlay_active : $.overlay_unactive,
-						$.overlay,
-					].join(" ")}
-				/>
+				<b className={isHovered ? $.overlay_active : $.overlay} />
 				<b
 					className={
 						isActive ? $.section_content_active : $.section_content

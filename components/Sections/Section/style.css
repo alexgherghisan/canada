@@ -104,6 +104,9 @@
 	transition-property: all;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
+	animation-name: reverse_height_overlay;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
 }
 .overlay_active {
 	composes: overlay;
@@ -114,12 +117,6 @@
 	transition-property: all;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
-}
-.overlay_unactive {
-	composes: overlay;
-	animation-name: reverse_height_overlay;
-	animation-duration: 0.3s;
-	animation-timing-function: ease-in-out;
 }
 @keyframes height_overlay {
 	0% {
